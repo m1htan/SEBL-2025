@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9081543-ead9-4fa0-bfc8-c08a84f89e07" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/scripts/preprocess/preprocess_volume_A.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/preprocess/preprocess_volume_A.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/preprocess/preprocess_volume_AA.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,16 +49,18 @@
   "keyToString": {
     "Python.preprocess.executor": "Run",
     "Python.preprocess_volume_A.executor": "Run",
+    "Python.preprocess_volume_AA.executor": "Run",
     "Python.read_raw_data.executor": "Run",
     "Python.volumeA.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/minhtan/Documents/GitHub/personal-private-project"
+    "last_opened_file_path": "/Users/minhtan/Documents/GitHub/SEBL-2025/scripts/preprocess"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scripts/preprocess" />
       <recent name="$PROJECT_DIR$/../personal-private-project" />
       <recent name="$PROJECT_DIR$/../personal-project-code" />
     </key>
