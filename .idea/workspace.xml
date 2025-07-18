@@ -4,7 +4,47 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9081543-ead9-4fa0-bfc8-c08a84f89e07" name="Changes" comment="" />
+    <list default="true" id="e9081543-ead9-4fa0-bfc8-c08a84f89e07" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/scripts/baseline/volumeA.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/preprocess/preprocess_volume_A.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/read_raw_data.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL381/Dataset SEBL_FL381/xlsx/FL381 Volume A.xls" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL381/Dataset SEBL_FL381/xlsx/FL381 Volume A.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL381/Dataset SEBL_FL381/xlsx/FL381 Volume AA.xls" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL381/Dataset SEBL_FL381/xlsx/FL381 Volume AA.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL381/Dataset SEBL_FL381/xlsx/FL381 Volume AP.xls" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL381/Dataset SEBL_FL381/xlsx/FL381 Volume AP.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL381/Dataset SEBL_FL381/xlsx/FL381 Volume B.xls" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL381/Dataset SEBL_FL381/xlsx/FL381 Volume B.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL381/Dataset SEBL_FL381/zip/FL381 Volume A.zip" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL381/Dataset SEBL_FL381/zip/FL381 Volume A.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL381/Dataset SEBL_FL381/zip/FL381 Volume AA.zip" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL381/Dataset SEBL_FL381/zip/FL381 Volume AA.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL381/Dataset SEBL_FL381/zip/FL381 Volume AP.zip" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL381/Dataset SEBL_FL381/zip/FL381 Volume AP.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL381/Dataset SEBL_FL381/zip/FL381 Volume B.zip" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL381/Dataset SEBL_FL381/zip/FL381 Volume B.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL381/Dataset SEBL_FL381/zip/FL381 Volume C xls.zip" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL381/Dataset SEBL_FL381/zip/FL381 Volume C xls.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL426/Dataset SEBL_FL426/process/FL426 Volume A combined.xls" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL426/Dataset SEBL_FL426/process/FL426 Volume A combined.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL426/Dataset SEBL_FL426/process/FL426 Volume A combined.xlsm - Q1 (b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL426/Dataset SEBL_FL426/process/FL426 Volume A combined.xlsm - Q1 (b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL426/Dataset SEBL_FL426/process/FL426 Volume A combined_xls.zip" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL426/Dataset SEBL_FL426/process/FL426 Volume A combined_xls.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL426/Dataset SEBL_FL426/xlsx/FL381 Volume A.xls" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL426/Dataset SEBL_FL426/xlsx/FL381 Volume A.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL426/Dataset SEBL_FL426/xlsx/FL381 Volume AA.xls" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL426/Dataset SEBL_FL426/xlsx/FL381 Volume AA.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL426/Dataset SEBL_FL426/xlsx/FL381 Volume AP.xls" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL426/Dataset SEBL_FL426/xlsx/FL381 Volume AP.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL426/Dataset SEBL_FL426/xlsx/FL381 Volume B.xls" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL426/Dataset SEBL_FL426/xlsx/FL381 Volume B.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL426/Dataset SEBL_FL426/zip/FL381 Volume A.zip" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL426/Dataset SEBL_FL426/zip/FL381 Volume A.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL426/Dataset SEBL_FL426/zip/FL381 Volume AA.zip" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL426/Dataset SEBL_FL426/zip/FL381 Volume AA.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL426/Dataset SEBL_FL426/zip/FL381 Volume AP.zip" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL426/Dataset SEBL_FL426/zip/FL381 Volume AP.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL426/Dataset SEBL_FL426/zip/FL381 Volume B.zip" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL426/Dataset SEBL_FL426/zip/FL381 Volume B.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL426/Dataset SEBL_FL426/zip/FL381 Volume C xls.zip" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL426/Dataset SEBL_FL426/zip/FL381 Volume C xls.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL426/fl_426_en_chi-tiet-hon.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL426/fl_426_en_chi-tiet-hon.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL426/fl_426_sum_en.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL426/fl_426_sum_en.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL549/Dataset SEBL_FL549/SMEs resource efficiency green markets_fl_549_volume_A.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL549/Dataset SEBL_FL549/SMEs resource efficiency green markets_fl_549_volume_A.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL549/Dataset SEBL_FL549/SMEs resource efficiency green markets_fl_549_volume_AA.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL549/Dataset SEBL_FL549/SMEs resource efficiency green markets_fl_549_volume_AA.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL549/Dataset SEBL_FL549/SMEs resource efficiency green markets_fl_549_volume_AAP.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL549/Dataset SEBL_FL549/SMEs resource efficiency green markets_fl_549_volume_AAP.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL549/Dataset SEBL_FL549/SMEs resource efficiency green markets_fl_549_volume_AP.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL549/Dataset SEBL_FL549/SMEs resource efficiency green markets_fl_549_volume_AP.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL549/Dataset SEBL_FL549/SMEs resource efficiency green markets_fl_549_volume_B.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL549/Dataset SEBL_FL549/SMEs resource efficiency green markets_fl_549_volume_B.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL549/Dataset SEBL_FL549/SMEs resource efficiency green markets_fl_549_volume_BP.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL549/Dataset SEBL_FL549/SMEs resource efficiency green markets_fl_549_volume_BP.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL549/SMEs, resource efficiency and green markets_FL549_data_en.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL549/SMEs, resource efficiency and green markets_FL549_data_en.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL549/SMEs, resource efficiency and green markets_FL549_infographic_en.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL549/SMEs, resource efficiency and green markets_FL549_infographic_en.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL549/SMEs, resource efficiency and green markets_FL549_report_en.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL549/SMEs, resource efficiency and green markets_FL549_report_en.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/FL549/SMEs, resource efficiency and green markets_FL549_summary_en.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_raw/FL549/SMEs, resource efficiency and green markets_FL549_summary_en.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/preprocess.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,22 +60,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "m1htan"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;m1htan&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/m1htan/SEBL-2025.git",
-    "accountId": "11972bd8-fbbe-4d53-a727-0aa4184d149a"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/m1htan/SEBL-2025.git&quot;,
+    &quot;accountId&quot;: &quot;11972bd8-fbbe-4d53-a727-0aa4184d149a&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2zlLrH9sXC9rm53U8eL2pFY8spC" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -43,6 +86,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.preprocess.executor": "Run",
+    "Python.preprocess_volume_A.executor": "Run",
+    "Python.read_raw_data.executor": "Run",
+    "Python.volumeA.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
@@ -55,9 +101,11 @@
       <recent name="$PROJECT_DIR$/../personal-project-code" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scripts/preprocess" />
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/scripts" />
       <recent name="$PROJECT_DIR$/data/FL381" />
       <recent name="$PROJECT_DIR$/data/FL426/Dataset SEBL_FL426/process" />
-      <recent name="$PROJECT_DIR$/data/FL426" />
     </key>
   </component>
   <component name="SharedIndexes">
