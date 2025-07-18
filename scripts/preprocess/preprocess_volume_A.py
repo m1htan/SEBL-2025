@@ -56,6 +56,9 @@ for sheet_name in xls.sheet_names:
         # Bước 6: Chỉ thêm '_percentage' cho dòng mới được điền
         df.loc[mask_new_filled, df.columns[0]] = df.loc[mask_new_filled, df.columns[0]] + "_percentage"
 
+        for col in df.columns[1:]:
+            df[col] = pd.to_numeric(df[col], errors='coerce')
+
         # Tạo tên file CSV an toàn
         safe_name = sheet_name.replace(" ", "_").replace("/", "_")
         output_path = os.path.join(OUTPUT_DIR, f"{safe_name}.csv")
