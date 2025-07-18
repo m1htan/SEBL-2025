@@ -1,13 +1,21 @@
-# Xóa hàng chứa chữ trong các cột country
-country_cols = [col for col in df.columns if "country" in col.lower()]
-for col in country_cols:
-    df = df[~df[col].astype(str).str.contains(r'[a-zA-Z]', na=False)]
+# 3. Vẽ Q-Q plot
+sm.qqplot(z_scores, line='s')
+plt.title("Q-Q Plot of Z-score (Total_Group_1)")
+plt.grid(True)
+plt.show()
 
-# Chuyển các cột thành float nếu có thể
-for col in df.columns:
-    if df[col].dtype == 'object':
-        try:
-            df[col] = df[col].str.replace(',', '.', regex=False)
-        except:
-            pass
-    df[col] = pd.to_numeric(df[col], errors='coerce')
+# 4. Kiểm định Shapiro-Wilk
+stat_shapiro, p_shapiro = shapiro(z_scores)
+print(f"Shapiro-Wilk test: Statistic = {stat_shapiro:.4f}, p-value = {p_shapiro:.4f}")
+if p_shapiro > 0.05:
+    print("Dữ liệu có thể là phân phối chuẩn (không bác bỏ H0).")
+else:
+    print("Dữ liệu không phải là phân phối chuẩn (bác bỏ H0).")
+
+# 5. Kiểm định D’Agostino-Pearson
+stat_normal, p_normal = normaltest(z_scores)
+print(f"D’Agostino-Pearson test: Statistic = {stat_normal:.4f}, p-value = {p_normal:.4f}")
+if p_normal > 0.05:
+    print("Dữ liệu có thể là phân phối chuẩn.")
+else:
+    print("Dữ liệu không có phân phối chuẩn.")
