@@ -1,4 +1,5 @@
 import os
+import re
 
 import numpy as np
 import pandas as pd
@@ -60,7 +61,8 @@ for sheet_name in xls.sheet_names:
             df[col] = pd.to_numeric(df[col], errors='coerce')
 
         # Tạo tên file CSV an toàn
-        safe_name = sheet_name.replace(" ", "_").replace("/", "_")
+        safe_name = re.sub(r"\s*\(.*?\)", "", sheet_name)
+        safe_name = safe_name.replace(" ", "_").replace("/", "_")
         output_path = os.path.join(OUTPUT_DIR, f"{safe_name}.csv")
 
         # Bước 7: Tạo cột file code

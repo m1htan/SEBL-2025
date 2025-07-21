@@ -8,7 +8,7 @@ os.makedirs(OUTPUT_DIR, exist_ok=True)
 output_path = os.path.join(OUTPUT_DIR, f"Group_1.csv")
 
 # Danh sách tên file
-csv_files = [f"Q{i}_(b).csv" for i in range(1, 9)]
+csv_files = [f"Q{i}.csv" for i in range(1, 9)]
 
 # Danh sách DataFrame
 dfs = []
