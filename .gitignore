@@ -32,3 +32,4 @@ coverage/
 
 *.env
 config_db.ini
+config_db/config_db.ini
