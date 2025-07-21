@@ -6,39 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e9081543-ead9-4fa0-bfc8-c08a84f89e07" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/HEAD" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/config" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/description" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/filter-repo/already_ran" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/filter-repo/changed-refs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/filter-repo/commit-map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/filter-repo/first-changed-commits" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/filter-repo/ref-map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/filter-repo/suboptimal-issues" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/hooks/applypatch-msg.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/hooks/commit-msg.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/hooks/fsmonitor-watchman.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/hooks/post-update.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/hooks/pre-applypatch.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/hooks/pre-commit.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/hooks/pre-merge-commit.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/hooks/pre-push.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/hooks/pre-rebase.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/hooks/pre-receive.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/hooks/prepare-commit-msg.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/hooks/push-to-checkout.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/hooks/sendemail-validate.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/hooks/update.sample" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/info/exclude" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/info/refs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/objects/info/commit-graph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/objects/info/packs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/objects/pack/pack-03a92d0a21a9d39cdd83dc24250a5c6125bdf7fd.bitmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/objects/pack/pack-03a92d0a21a9d39cdd83dc24250a5c6125bdf7fd.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/objects/pack/pack-03a92d0a21a9d39cdd83dc24250a5c6125bdf7fd.pack" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/objects/pack/pack-03a92d0a21a9d39cdd83dc24250a5c6125bdf7fd.rev" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/packed-refs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SEBL-2025.git/refs/remotes/origin/main" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
