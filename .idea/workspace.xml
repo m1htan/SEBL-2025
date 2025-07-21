@@ -6,13 +6,41 @@
   <component name="ChangeListManager">
     <list default="true" id="e9081543-ead9-4fa0-bfc8-c08a84f89e07" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/minmax_hist.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/minmax_phân phối chuẩn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/minmax_qqplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/zscore_hist.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/zscore_qqplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/baseline/group_1/group_1_MinMax.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/baseline/group_1/group_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/baseline/group_1/group_1_ZScore.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/baseline/Group_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/baseline/Group_1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/D1b_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/D1b_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/DX1_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/DX1_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/DX3_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/DX3_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/DX4_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/DX4_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/DX5_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/DX5_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/N1a_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/N1a_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/N1b_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/N1b_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/N2_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/N2_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/N3_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/N3_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/NACEA_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/NACEA_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/NACEB_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/NACEB_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/Q10_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/Q10_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/Q13_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/Q13_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/Q14_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/Q14_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/Q15_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/Q15_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/Q1_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/Q1_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/Q2_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/Q2_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/Q3_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/Q3_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/Q4_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/Q4_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/Q5_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/Q5_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/Q6_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/Q6_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/Q7_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/Q7_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/Q8_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/Q8_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/Q9_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/Q9_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/SCR10_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/SCR10_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/SCR11a_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/SCR11a_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/SCR11b_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/SCR11b_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/SCR12_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/SCR12_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/SCR13a_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/SCR13a_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/SCR14_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/SCR14_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/SCR16_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/SCR16_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/brk_SCR14_(b).csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_clean/volume_A/brk_SCR14_(b).csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/baseline/group_1/group_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/baseline/group_1/group_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/preprocess/preprocess_volume_A.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/preprocess/preprocess_volume_A.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

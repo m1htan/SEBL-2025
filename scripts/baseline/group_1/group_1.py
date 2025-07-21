@@ -21,11 +21,15 @@ for file_name in csv_files:
         # Đảm bảo cột đầu tiên là chuỗi
         df.iloc[:, 0] = df.iloc[:, 0].astype(str)
 
+        if "file_code" in df.columns:
+            df["file_code"] = df["file_code"].astype(str)
+
         # Loại bỏ hàng rỗng hoặc chỉ toàn NaN
         df.dropna(how="all", inplace=True)
 
         # Ép các cột còn lại về float
-        for col in df.columns[1:]:
+        numeric_cols = df.columns.difference(["file_code", "Unnamed: 0"])
+        for col in numeric_cols:
             df[col] = pd.to_numeric(df[col], errors='coerce')
 
         dfs.append(df)

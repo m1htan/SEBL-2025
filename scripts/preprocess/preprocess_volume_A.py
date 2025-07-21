@@ -63,6 +63,9 @@ for sheet_name in xls.sheet_names:
         safe_name = sheet_name.replace(" ", "_").replace("/", "_")
         output_path = os.path.join(OUTPUT_DIR, f"{safe_name}.csv")
 
+        # Bước 7: Tạo cột file code
+        df["file_code"] = safe_name
+
         # Lưu CSV
         df.to_csv(output_path, index=False, encoding="utf-8-sig")
         print(f"[PROCESS] Đã lưu sheet '{sheet_name}' thành file: {output_path}")
