@@ -31,4 +31,4 @@ coverage/
 *.swp
 
 *.env
-*.ini
+config_db.ini
