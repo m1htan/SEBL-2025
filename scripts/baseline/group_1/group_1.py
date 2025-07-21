@@ -23,6 +23,8 @@ for file_name in csv_files:
 
         if "file_code" in df.columns:
             df["file_code"] = df["file_code"].astype(str)
+            file_code_col = df.pop("file_code")
+            df.insert(1, "file_code", file_code_col)
 
         # Loại bỏ hàng rỗng hoặc chỉ toàn NaN
         df.dropna(how="all", inplace=True)
