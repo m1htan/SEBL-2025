@@ -65,6 +65,8 @@ for sheet_name in xls.sheet_names:
 
         # Bước 7: Tạo cột file code
         df["file_code"] = safe_name
+        file_code_col = df.pop("file_code")
+        df.insert(1, "file_code", file_code_col)
 
         # Lưu CSV
         df.to_csv(output_path, index=False, encoding="utf-8-sig")
