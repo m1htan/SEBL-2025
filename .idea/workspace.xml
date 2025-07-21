@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9081543-ead9-4fa0-bfc8-c08a84f89e07" name="Changes" comment="" />
+    <list default="true" id="e9081543-ead9-4fa0-bfc8-c08a84f89e07" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/minmax_hist.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/minmax_phân phối chuẩn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/minmax_qqplot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/zscore_hist.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/zscore_qqplot.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/baseline/group_1/group_1_MinMax.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/baseline/group_1/group_1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/baseline/group_1/group_1_ZScore.py" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,23 +52,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.group_1.executor": "Run",
-    "Python.group_1_MinMax.executor": "Run",
-    "Python.group_1_ZScore.executor": "Run",
-    "Python.preprocess.executor": "Run",
-    "Python.preprocess_volume_A.executor": "Run",
-    "Python.preprocess_volume_AA.executor": "Run",
-    "Python.preprocess_volume_AAP.executor": "Run",
-    "Python.read_raw_data.executor": "Run",
-    "Python.volumeA.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/minhtan/Documents/GitHub/SEBL-2025/scripts/baseline/group_1"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.group_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.group_1_MinMax.executor&quot;: &quot;Run&quot;,
+    &quot;Python.group_1_ZScore.executor&quot;: &quot;Run&quot;,
+    &quot;Python.preprocess.executor&quot;: &quot;Run&quot;,
+    &quot;Python.preprocess_volume_A.executor&quot;: &quot;Run&quot;,
+    &quot;Python.preprocess_volume_AA.executor&quot;: &quot;Run&quot;,
+    &quot;Python.preprocess_volume_AAP.executor&quot;: &quot;Run&quot;,
+    &quot;Python.read_raw_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.volumeA.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/minhtan/Documents/GitHub/SEBL-2025/scripts/baseline/group_1&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/scripts/baseline/group_1" />
