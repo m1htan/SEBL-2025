@@ -42,7 +42,6 @@ for file_name in csv_files:
 # Gộp các DataFrame lại
 merged_df = pd.concat(dfs, ignore_index=True)
 
-
 print(merged_df)
 merged_df.to_csv(output_path, index=False, encoding="utf-8-sig")
 print(f"[PROCESS] Đã lưu dataframe thành file: {output_path}")
