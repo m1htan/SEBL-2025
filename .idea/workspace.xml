@@ -5,12 +5,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9081543-ead9-4fa0-bfc8-c08a84f89e07" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/test_connection_1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_connection_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/insert_into_sql/insert_metadata.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_data_csv_vs_sql.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_data_type.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config_db/config_sql_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/config_db/config_sql_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/baseline/Group_1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/merged_data/Group_1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/D1b.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/D1b.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/DX1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/DX1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/DX3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/DX3.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/DX4.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/DX4.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/DX5.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/DX5.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/N1a.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/N1a.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/N1b.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/N1b.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/N2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/N2.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/N3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/N3.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/NACEA.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/NACEA.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/NACEB.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/NACEB.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/Q1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/Q1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/Q10.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/Q10.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/Q13.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/Q13.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/Q14.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/Q14.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/Q15.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/Q15.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/Q2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/Q2.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/Q3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/Q3.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/Q4.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/Q4.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/Q5.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/Q5.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/Q6.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/Q6.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/Q7.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/Q7.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/Q8.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/Q8.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/Q9.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/Q9.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/SCR10.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/SCR10.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/SCR11a.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/SCR11a.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/SCR11b.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/SCR11b.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/SCR12.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/SCR12.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/SCR13a.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/SCR13a.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/SCR14.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/SCR14.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/SCR16.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/SCR16.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_clean/volume_A/brk_SCR14.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/volume_A/brk_SCR14.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_raw/FL549/Dataset SEBL_FL549/SMEs resource efficiency green markets_fl_549_volume_A.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/raw_data/FL549/Dataset SEBL_FL549/SMEs resource efficiency green markets_fl_549_volume_A.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_raw/FL549/Dataset SEBL_FL549/SMEs resource efficiency green markets_fl_549_volume_AA.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/raw_data/FL549/Dataset SEBL_FL549/SMEs resource efficiency green markets_fl_549_volume_AA.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_raw/FL549/Dataset SEBL_FL549/SMEs resource efficiency green markets_fl_549_volume_AAP.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/raw_data/FL549/Dataset SEBL_FL549/SMEs resource efficiency green markets_fl_549_volume_AAP.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_raw/FL549/Dataset SEBL_FL549/SMEs resource efficiency green markets_fl_549_volume_AP.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/raw_data/FL549/Dataset SEBL_FL549/SMEs resource efficiency green markets_fl_549_volume_AP.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_raw/FL549/Dataset SEBL_FL549/SMEs resource efficiency green markets_fl_549_volume_B.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/raw_data/FL549/Dataset SEBL_FL549/SMEs resource efficiency green markets_fl_549_volume_B.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_raw/FL549/Dataset SEBL_FL549/SMEs resource efficiency green markets_fl_549_volume_BP.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/raw_data/FL549/Dataset SEBL_FL549/SMEs resource efficiency green markets_fl_549_volume_BP.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/baseline/group_1/group_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/baseline/group_1/group_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_connection.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_connection_0.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/insert_into_sql/g1_insert_into_database.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/insert_into_sql/insert_g1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/preprocess/preprocess_volume_A.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/preprocess/preprocess_volume_A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/read_raw_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/read_raw_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts_sql/initial-script.sql" beforeDir="false" afterPath="$PROJECT_DIR$/scripts_sql/initial-script.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +97,8 @@
     "Python.group_1.executor": "Run",
     "Python.group_1_MinMax.executor": "Run",
     "Python.group_1_ZScore.executor": "Run",
+    "Python.insert_into_database.executor": "Run",
+    "Python.insert_metadata.executor": "Run",
     "Python.preprocess.executor": "Run",
     "Python.preprocess_volume_A.executor": "Run",
     "Python.preprocess_volume_AA.executor": "Run",
@@ -63,6 +107,8 @@
     "Python.test_connection_0.executor": "Run",
     "Python.test_connection_1.executor": "Run",
     "Python.test_connection_2.executor": "Run",
+    "Python.test_data_csv_vs_sql.executor": "Run",
+    "Python.test_data_type.executor": "Run",
     "Python.volumeA.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -79,11 +125,11 @@
       <recent name="$PROJECT_DIR$/../personal-project-code" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scripts/insert_into_sql" />
+      <recent name="$PROJECT_DIR$/scripts/g1_insert_into_sql" />
       <recent name="$PROJECT_DIR$/documentations/FL549" />
       <recent name="$PROJECT_DIR$/documentations" />
       <recent name="$PROJECT_DIR$/scripts/preprocess" />
-      <recent name="$PROJECT_DIR$/data" />
-      <recent name="$PROJECT_DIR$/scripts" />
     </key>
   </component>
   <component name="SharedIndexes">

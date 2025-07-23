@@ -1,9 +1,9 @@
 import pandas as pd
 import os
 
-csv_dir = "/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A"
+csv_dir = "/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A"
 
-OUTPUT_DIR = "/Users/minhtan/Documents/GitHub/SEBL-2025/data/baseline"
+OUTPUT_DIR = "/Users/minhtan/Documents/GitHub/SEBL-2025/data/merged_data"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 output_path = os.path.join(OUTPUT_DIR, f"Group_1.csv")
 

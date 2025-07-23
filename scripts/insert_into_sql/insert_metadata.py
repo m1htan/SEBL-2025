@@ -3,15 +3,10 @@ import pandas as pd
 import pyodbc
 from config_db import config_sql_server
 
-CSV_DIR = "/data/data_clean/volume_A"
+CSV_DIR = "/Users/minhtan/Documents/GitHub/SEBL-2025/data"
 os.makedirs(CSV_DIR, exist_ok=True)
 
-csv_files = ("Q1.csv", "Q2.csv", "Q3.csv", "Q4.csv", "Q5.csv", "Q6.csv", "Q7.csv", "Q8.csv",
-             "N1a.csv", "N1b.csv", "N2.csv", "N3.csv",
-             "Q14.csv", "Q15.csv",
-             "Q9.csv", "Q10.csv", "Q13.csv", "DX1.csv", "DX3.csv", "DX4.csv", "DX5.csv",
-             "NACEA.csv", "NACEB.csv", "D1b.csv", "SCR10.csv", "SCR11a.csv", "SCR11b.csv",
-             "SCR12.csv", "SCR13a.csv", "SCR14.csv", "brk_SCR14.csv", "SCR16.csv")
+csv_files = ("metadata_549.csv",)
 
 def init_db():
     conn = config_sql_server(section='sqlserver')
@@ -19,6 +14,7 @@ def init_db():
 
 def create_table_from_csv(cursor, df, table_name):
     columns_with_types = []
+    df["group_weight"] = pd.to_numeric(df["group_weight"], errors="coerce")
     for col in df.columns:
         dtype = df[col].dtype
         if dtype == "int64":

@@ -4,10 +4,10 @@ import re
 import numpy as np
 import pandas as pd
 
-DATA_RAW_DIR = "/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_raw/FL549/Dataset SEBL_FL549"
+DATA_RAW_DIR = "/data/raw_data/FL549/Dataset SEBL_FL549"
 os.makedirs(DATA_RAW_DIR, exist_ok=True)
 
-OUTPUT_DIR = "/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A"
+OUTPUT_DIR = "/data/clean_data/volume_A"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 raw_volume_A = os.path.join(DATA_RAW_DIR, 'SMEs resource efficiency green markets_fl_549_volume_A.xlsx')
