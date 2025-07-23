@@ -3,7 +3,7 @@ import pyodbc
 from config_db import config_sql_server
 
 # Tên file và bảng
-csv_file = "/Users/minhtan/Documents/GitHub/SEBL-2025/data/metadata_549.csv"
+csv_file = "/data/metadata/metadata_549.csv"
 table_name = "metadata_549"
 
 # Đọc từ CSV

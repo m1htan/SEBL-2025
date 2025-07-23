@@ -6,7 +6,7 @@ from config_db import config_sql_server
 CSV_DIR = "/Users/minhtan/Documents/GitHub/SEBL-2025/data/metadata"
 os.makedirs(CSV_DIR, exist_ok=True)
 
-csv_files = ("metadata_549.csv",)
+csv_files = ("country.csv",)
 
 def init_db():
     conn = config_sql_server(section='sqlserver')
@@ -14,7 +14,8 @@ def init_db():
 
 def create_table_from_csv(cursor, df, table_name):
     columns_with_types = []
-    df["group_weight"] = pd.to_numeric(df["group_weight"], errors="coerce")
+    df["EU_or_not"] = pd.to_numeric(df["EU_or_not"], errors="coerce")
+    df["splits"] = pd.to_numeric(df["splits"], errors="coerce")
     for col in df.columns:
         dtype = df[col].dtype
         if dtype == "int64":

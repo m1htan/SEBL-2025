@@ -1,0 +1,40 @@
+country_id,country_code,country_name,EU_or_not,splits
+1,BE,Belgium,1,6
+2,BG,Bulgaria,1,6
+3,CZ,Czechia,1,4
+4,DK,Denmark,1,6
+5,DE,Germany,1,4
+6,EE,Estonia,1,4
+7,IE,Ireland,1,4
+8,EL,Greece,1,4
+9,ES,Spain,1,6
+10,FR,France,1,6
+11,HR,Croatia,1,4
+12,IT,Italy,1,6
+13,CY,Rep. of Cyprus,1,6
+14,LV,Latvia,1,6
+15,LT,Lithuania,1,6
+16,LU,Luxembourg,1,4
+17,HU,Hungary,1,4
+18,MT,Malta,1,6
+19,NL,Netherlands,1,6
+20,AT,Austria,1,6
+21,PL,Poland,1,6
+22,PT,Portugal,1,6
+23,RO,Romania,1,6
+24,SI,Slovenia,1,6
+25,SK,Slovakia,1,4
+26,FI,Finland,1,4
+27,SE,Sweden,1,4
+28,UK,United Kingdom,0,0
+29,IS,Iceland,0,0
+30,NO,Norway,0,0
+31,CH,Switzerland,0,0
+32,ME,Montenegro,0,0
+33,MD,Moldova,0,0
+34,MK,North Macedonia,0,0
+35,AL,Albania,0,0
+36,RS,Serbia,0,0
+37,TR,Türkiye,0,0
+38,US,United States,0,0
+39,EU27,European Union,1,0
