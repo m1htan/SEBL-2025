@@ -40,6 +40,8 @@ for sheet_name in xls.sheet_names:
         df = df[~df.apply(lambda row: row.astype(str).str.contains(question_code_pattern).any(), axis=1)]
 
         df.columns = df.iloc[0]
+        df.columns.values[0] = "criteria"
+
         rows_to_drop = [i for i in [0, 1] if i in df.index]
         df = df.drop(rows_to_drop).reset_index(drop=True)
 

@@ -30,7 +30,7 @@ for file_name in csv_files:
         df.dropna(how="all", inplace=True)
 
         # Ép các cột còn lại về float
-        numeric_cols = df.columns.difference(["file_code", "Unnamed: 0"])
+        numeric_cols = df.columns.difference(["file_code", "criteria"])
         for col in numeric_cols:
             df[col] = pd.to_numeric(df[col], errors='coerce')
 
