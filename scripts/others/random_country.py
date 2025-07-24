@@ -27,7 +27,7 @@ for country in group_6_10:
     print("-", country)
 
 # Lưu vào CSV
-with open("/Users/minhtan/Documents/GitHub/SEBL-2025/data/metadata/splits_country.csv", mode="w", newline="") as file:
+with open("/data/metadata/splits_country.csv", mode="w", newline="") as file:
     writer = csv.writer(file)
     writer.writerow(["Group", "Country"])
     for country in group_4_10:

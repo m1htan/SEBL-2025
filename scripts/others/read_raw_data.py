@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-DATA_RAW_DIR = "/Users/minhtan/Documents/GitHub/SEBL-2025/data/raw_data/FL549/Dataset SEBL_FL549"
+DATA_RAW_DIR = "/data/raw_data/FL549/Dataset SEBL_FL549"
 os.makedirs(DATA_RAW_DIR, exist_ok=True)
 
 # Đọc file xlsx volume A
