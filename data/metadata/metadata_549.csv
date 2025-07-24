@@ -1,33 +1,33 @@
 group_id,group,file_code,question,base,type,group_weight,source_name,source_path,source_type,target_name
-1,Resource Efficiency,Q1,What actions is your company undertaking to be more resource efficient?,All,MULTIPLE ANSWERS POSSIBLE,"0.1",Q1.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/Q1.csv,.csv,group1_Q1
-1,Resource Efficiency,Q2,What are the additional resource efficiency actions planned?,All,MULTIPLE ANSWERS POSSIBLE,"0.1",Q2.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/Q2.csv,.csv,group1_Q2
-1,Resource Efficiency,Q3,What impact have actions had on production costs?,IF CODE 1-9 in Q1,ONE ANSWER ONLY,"0.1",Q3.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/Q3.csv,.csv,group1_Q3
-1,Resource Efficiency,Q4,How much have you invested per year to be more resource efficient?,IF CODE 1-9 in Q1,ONE ANSWER ONLY,"0.1",Q4.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/Q4.csv,.csv,group1_Q4
-1,Resource Efficiency,Q5,Which type of support does your company rely on?,IF CODE 1-9 in Q1,MULTIPLE ANSWERS POSSIBLE,"0.1",Q5.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/Q5.csv,.csv,group1_Q5
-1,Resource Efficiency,Q6,Which type of external support is it?,IF Q5=3,MULTIPLE ANSWERS POSSIBLE,"0.1",Q6.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/Q6.csv,.csv,group1_Q6
-1,Resource Efficiency,Q7,Difficulties setting up resource efficiency actions?,IF CODE 1-9 in Q1,MULTIPLE ANSWERS POSSIBLE,"0.1",Q7.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/Q7.csv,.csv,group1_Q7
-1,Resource Efficiency,Q8,What would help your company to be more resource efficient?,All,MAX. 3 ANSWERS POSSIBLE,"0.1",Q8.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/Q8.csv,.csv,group1_Q8
-2,Energy & Circular Economy,N1a,Does your company use renewable energy?,All,ONE ANSWER ONLY,"0.5",N1a.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/N1a.csv,.csv,group2_N1a
-2,Energy & Circular Economy,N1b,Share of energy generated on-site,IF N1a = 2,ONE ANSWER ONLY,"0.5",N1b.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/N1b.csv,.csv,group2_N1b
-2,Energy & Circular Economy,N2,Use of recycled materials in production,IF SCR16 = 1 or 3,ONE ANSWER ONLY,"0.5",N2.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/N2.csv,.csv,group2_N2
-2,Energy & Circular Economy,N3,Policy to extend product lifespan,IF SCR16 = 1 or 3,ONE ANSWER ONLY,"0.5",N3.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/N3.csv,.csv,group2_N3
-3,Climate Strategy,Q14,Strategy to become climate neutral/negative?,All,ONE ANSWER ONLY,"0.3",Q14.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/Q14.csv,.csv,group3_Q14
-3,Climate Strategy,Q15,What actions to become climate neutral?,IF Q14 = 1,MULTIPLE ANSWERS POSSIBLE,"0.3",Q15.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/Q15.csv,.csv,group3_Q15
-4,Green Products & Services,Q9,Does your company offer green products/services?,All,ONE ANSWER ONLY,"0.1",Q9.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/Q9.csv,.csv,group4_Q9
-4,Green Products & Services,Q10,Share of turnover from green products/services,IF Q9 = 1,ONE ANSWER ONLY,"0.1",Q10.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/Q10.csv,.csv,group4_Q10
-4,Green Products & Services,Q13,What support do you rely on for green products/services?,IF Q9 = 1,MULTIPLE ANSWERS POSSIBLE,"0.1",Q13.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/Q13.csv,.csv,group4_Q13
-4,Green Products & Services,DX1,What type of external support is it?,IF Q13 = 3,MULTIPLE ANSWERS POSSIBLE,"0.1",DX1.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/DX1.csv,.csv,group4_DX1
-4,Green Products & Services,DX3,Support to expand green products/services,IF Q9 = 1,MAX. 2 ANSWERS POSSIBLE,"0.1",DX3.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/DX3.csv,.csv,group4_DX3
-4,Green Products & Services,DX4,Support to launch green products/services,IF Q9 = 2 or Q9 = 3,MAX. 2 ANSWERS POSSIBLE,"0.1",DX4.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/DX4.csv,.csv,group4_DX4
-4,Green Products & Services,DX5,Number of employees in green jobs,All,WRITE DOWN,"0.1",DX5.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/DX5.csv,.csv,group4_DX5
-5,Company Profile,NACEA,Sector (NACE),All,N.A.,0,NACEA.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/NACEA.csv,.csv,group5_NACEA
-5,Company Profile,NACEB,Sector group (NACE),All,N.A.,0,NACEB.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/NACEB.csv,.csv,group5_NACEB
-5,Company Profile,D1b,Company category,"IF NACE = B, C, D, E, F, G, H, I, J, M, L",N.A.,0,D1b.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/D1b.csv,.csv,group5_D1b
-5,Company Profile,SCR10,Company size,All,N.A.,0,SCR10.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/SCR10.csv,.csv,group5_SCR10
-5,Company Profile,SCR11a,Staff increase/decrease over 3 years,All,N.A.,0,SCR11a.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/SCR11a.csv,.csv,group5_SCR11a
-5,Company Profile,SCR11b,Difficulty finding staff with right skills,All,N.A.,0,SCR11b.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/SCR11b.csv,.csv,group5_SCR11b
-5,Company Profile,SCR12,Company age (start-up year),All,N.A.,0,SCR12.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/SCR12.csv,.csv,group5_SCR12
-5,Company Profile,SCR13a,Annual turnover change (3 years),All,N.A.,0,SCR13a.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/SCR13a.csv,.csv,group5_SCR13a
-5,Company Profile,SCR14,Total turnover in 2023,All,N.A.,0,SCR14.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/SCR14.csv,.csv,group5_SCR14
-5,Company Profile,brk_SCR14,Turnover 2023 (binned),All,N.A.,0,brk_SCR14.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/brk_SCR14.csv,.csv,group5_brk_SCR14
-5,Company Profile,SCR16,What does your company sell?,All,N.A.,0,SCR16.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/data_clean/volume_A/SCR16.csv,.csv,group5_SCR16
+1,Resource Efficiency,Q1,What actions is your company undertaking to be more resource efficient?,All,MULTIPLE ANSWERS POSSIBLE,"0.1",Q1.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/Q1.csv,.csv,group1_Q1
+1,Resource Efficiency,Q2,What are the additional resource efficiency actions planned?,All,MULTIPLE ANSWERS POSSIBLE,"0.1",Q2.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/Q2.csv,.csv,group1_Q2
+1,Resource Efficiency,Q3,What impact have actions had on production costs?,IF CODE 1-9 in Q1,ONE ANSWER ONLY,"0.1",Q3.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/Q3.csv,.csv,group1_Q3
+1,Resource Efficiency,Q4,How much have you invested per year to be more resource efficient?,IF CODE 1-9 in Q1,ONE ANSWER ONLY,"0.1",Q4.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/Q4.csv,.csv,group1_Q4
+1,Resource Efficiency,Q5,Which type of support does your company rely on?,IF CODE 1-9 in Q1,MULTIPLE ANSWERS POSSIBLE,"0.1",Q5.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/Q5.csv,.csv,group1_Q5
+1,Resource Efficiency,Q6,Which type of external support is it?,IF Q5=3,MULTIPLE ANSWERS POSSIBLE,"0.1",Q6.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/Q6.csv,.csv,group1_Q6
+1,Resource Efficiency,Q7,Difficulties setting up resource efficiency actions?,IF CODE 1-9 in Q1,MULTIPLE ANSWERS POSSIBLE,"0.1",Q7.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/Q7.csv,.csv,group1_Q7
+1,Resource Efficiency,Q8,What would help your company to be more resource efficient?,All,MAX. 3 ANSWERS POSSIBLE,"0.1",Q8.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/Q8.csv,.csv,group1_Q8
+2,Energy & Circular Economy,N1a,Does your company use renewable energy?,All,ONE ANSWER ONLY,"0.5",N1a.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/N1a.csv,.csv,group2_N1a
+2,Energy & Circular Economy,N1b,Share of energy generated on-site,IF N1a = 2,ONE ANSWER ONLY,"0.5",N1b.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/N1b.csv,.csv,group2_N1b
+2,Energy & Circular Economy,N2,Use of recycled materials in production,IF SCR16 = 1 or 3,ONE ANSWER ONLY,"0.5",N2.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/N2.csv,.csv,group2_N2
+2,Energy & Circular Economy,N3,Policy to extend product lifespan,IF SCR16 = 1 or 3,ONE ANSWER ONLY,"0.5",N3.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/N3.csv,.csv,group2_N3
+3,Climate Strategy,Q14,Strategy to become climate neutral/negative?,All,ONE ANSWER ONLY,"0.3",Q14.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/Q14.csv,.csv,group3_Q14
+3,Climate Strategy,Q15,What actions to become climate neutral?,IF Q14 = 1,MULTIPLE ANSWERS POSSIBLE,"0.3",Q15.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/Q15.csv,.csv,group3_Q15
+4,Green Products & Services,Q9,Does your company offer green products/services?,All,ONE ANSWER ONLY,"0.1",Q9.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/Q9.csv,.csv,group4_Q9
+4,Green Products & Services,Q10,Share of turnover from green products/services,IF Q9 = 1,ONE ANSWER ONLY,"0.1",Q10.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/Q10.csv,.csv,group4_Q10
+4,Green Products & Services,Q13,What support do you rely on for green products/services?,IF Q9 = 1,MULTIPLE ANSWERS POSSIBLE,"0.1",Q13.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/Q13.csv,.csv,group4_Q13
+4,Green Products & Services,DX1,What type of external support is it?,IF Q13 = 3,MULTIPLE ANSWERS POSSIBLE,"0.1",DX1.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/DX1.csv,.csv,group4_DX1
+4,Green Products & Services,DX3,Support to expand green products/services,IF Q9 = 1,MAX. 2 ANSWERS POSSIBLE,"0.1",DX3.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/DX3.csv,.csv,group4_DX3
+4,Green Products & Services,DX4,Support to launch green products/services,IF Q9 = 2 or Q9 = 3,MAX. 2 ANSWERS POSSIBLE,"0.1",DX4.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/DX4.csv,.csv,group4_DX4
+4,Green Products & Services,DX5,Number of employees in green jobs,All,WRITE DOWN,"0.1",DX5.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/DX5.csv,.csv,group4_DX5
+5,Company Profile,NACEA,Sector (NACE),All,N.A.,0,NACEA.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/NACEA.csv,.csv,group5_NACEA
+5,Company Profile,NACEB,Sector group (NACE),All,N.A.,0,NACEB.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/NACEB.csv,.csv,group5_NACEB
+5,Company Profile,D1b,Company category,"IF NACE = B, C, D, E, F, G, H, I, J, M, L",N.A.,0,D1b.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/D1b.csv,.csv,group5_D1b
+5,Company Profile,SCR10,Company size,All,N.A.,0,SCR10.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/SCR10.csv,.csv,group5_SCR10
+5,Company Profile,SCR11a,Staff increase/decrease over 3 years,All,N.A.,0,SCR11a.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/SCR11a.csv,.csv,group5_SCR11a
+5,Company Profile,SCR11b,Difficulty finding staff with right skills,All,N.A.,0,SCR11b.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/SCR11b.csv,.csv,group5_SCR11b
+5,Company Profile,SCR12,Company age (start-up year),All,N.A.,0,SCR12.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/SCR12.csv,.csv,group5_SCR12
+5,Company Profile,SCR13a,Annual turnover change (3 years),All,N.A.,0,SCR13a.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/SCR13a.csv,.csv,group5_SCR13a
+5,Company Profile,SCR14,Total turnover in 2023,All,N.A.,0,SCR14.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/SCR14.csv,.csv,group5_SCR14
+5,Company Profile,brk_SCR14,Turnover 2023 (binned),All,N.A.,0,brk_SCR14.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/brk_SCR14.csv,.csv,group5_brk_SCR14
+5,Company Profile,SCR16,What does your company sell?,All,N.A.,0,SCR16.csv,/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/volume_A/SCR16.csv,.csv,group5_SCR16
