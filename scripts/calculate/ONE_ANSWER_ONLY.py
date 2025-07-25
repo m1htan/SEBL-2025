@@ -52,7 +52,10 @@ def process_table(table_name: str, conn):
     df = pd.read_sql(f"SELECT * FROM {table_name}", conn)
 
     # 2. Bỏ các dòng có hậu tố "_percentage" hoặc "__percentage"
-    df_filtered = df[~df.iloc[:, 0].str.contains(r"_+percentage", regex=True, na=False)]
+    df_filtered = df[
+        ~df.iloc[:, 0].str.contains(r"_+percentage", regex=True, na=False) &
+        ~df.iloc[:, 0].isin(["base_weighted_total"])
+        ]
 
     # 3. Đọc metadata
     df_meta = get_meta_data(table_name, conn)

@@ -39,7 +39,11 @@ def process_table(table_name: str, conn):
         print(f"[SKIP] {table_name}: Không có cột số.")
         return None
 
-    df_filtered = df[~df.iloc[:, 0].str.contains(r"_+percentage", regex=True, na=False)]
+    df_filtered = df[
+        ~df.iloc[:, 0].str.contains(r"_+percentage", regex=True, na=False) &
+        ~df.iloc[:, 0].isin(["base_weighted_total"])
+        ]
+    print(df_filtered)
 
     # Lấy base_total ở dòng đầu tiên
     base_total = df_filtered.loc[0, numeric_cols]
@@ -51,17 +55,13 @@ def process_table(table_name: str, conn):
     # Tính tỉ lệ: tổng / base_total
     ratio_scores = country_totals / base_total
 
-    # Scale toàn bộ quốc gia về thang điểm 1–10
-    scaler = MinMaxScaler(feature_range=(1, 10))
-    scaled_scores = pd.Series(
-        scaler.fit_transform(ratio_scores.values.reshape(-1, 1)).flatten(),
-        index=ratio_scores.index
-    )
-
     # Ghép kết quả vào DataFrame đầu ra
     _, file_code = get_meta_data(table_name, conn)
-    result = scaled_scores.to_frame().T
+    result = ratio_scores.to_frame().T
     result.insert(0, 'file_code', file_code)
+
+    pd.set_option("display.float_format", lambda x: f"{x:.10f}")
+    print(result.head())
 
     return result
 
@@ -87,5 +87,3 @@ if __name__ == "__main__":
         print(f"Đã lưu kết quả tại: {OUTPUT_FILE}")
     else:
         print("Không có bảng nào được xử lý.")
-
-

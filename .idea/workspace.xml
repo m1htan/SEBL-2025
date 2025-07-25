@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9081543-ead9-4fa0-bfc8-c08a84f89e07" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/scripts/calculate/MAX_2–3_ANSWERS.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cleaned_data/processed/multiple_answer_scores.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/processed/multiple_answer_scores.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/calculate/MAX_2–3_ANSWERS.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/calculate/MAX_2–3_ANSWERS.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/calculate/MULTIPLE_ANSWERS_POSSIBLE.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/calculate/MULTIPLE_ANSWERS_POSSIBLE.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/calculate/ONE_ANSWER_ONLY.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/calculate/ONE_ANSWER_ONLY.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +50,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.MAX_2–3_ANSWERS.executor": "Run",
     "Python.MULTIPLE_ANSWERS_POSSIBLE.executor": "Run",
     "Python.ONE_ANSWER_ONLY.executor": "Run",
     "Python.group_1.executor": "Run",
