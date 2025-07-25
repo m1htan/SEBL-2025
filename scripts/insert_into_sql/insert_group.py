@@ -1,70 +1,100 @@
-import pyodbc
 import pandas as pd
-from collections import defaultdict
-from config_db import config_sql_server
+import os
 
-# 1. Kết nối DB
+# --- Cấu hình ---
+CSV_DIR = "/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/processed"
+CSV_FILES = ["max_2-3_answer_scores.csv", "multiple_answer_scores.csv",
+             "one_answer_scores.csv", "write_down_answer_scores.csv"]
+TABLE_METADATA = "metadata_549"
+
+from sqlalchemy import create_engine
+import urllib
+
 def init_db():
-    return config_sql_server(section='sqlserver')
+    params = urllib.parse.quote_plus(
+        "DRIVER={ODBC Driver 17 for SQL Server};"
+        "SERVER=localhost;"
+        "DATABASE=SEBL-2025;"
+        "UID=sa;"
+        "PWD=Minhtan0410@;"
+        "Encrypt=no;"
+        "TrustServerCertificate=yes;"
+        "Connection Timeout=5;"
+    )
+    engine = create_engine(f"mssql+pyodbc:///?odbc_connect={params}")
+    return engine
 
-def get_table_names(conn):
-    cursor = conn.cursor()
-    cursor.execute("""
-    SELECT TABLE_NAME
-    FROM INFORMATION_SCHEMA.TABLES
-    WHERE TABLE_TYPE = 'BASE TABLE'
-    """)
-    return [row[0] for row in cursor.fetchall()]
 
-def merge_group():
-    table_names = get_table_names(conn)
+# --- 1. Merge các file CSV ---
+def merge_csv_files(csv_dir, file_list):
+    df_all = []
+    for file in file_list:
+        path = os.path.join(csv_dir, file)
+        df = pd.read_csv(path)
+        df_all.append(df)
+    df_merged = pd.concat(df_all, ignore_index=True)
+    return df_merged
 
-    # Nhóm các bảng theo prefix "group1", "group2", v.v.
-    group_tables = defaultdict(list)
-    for table in table_names:
-        if table.startswith("group"):
-            group_prefix = table.split("_")[0]  # ví dụ: group1
-            group_tables[group_prefix].append(table)
 
-    # Gộp từng group và lưu vào bảng mới trong DB
-    for group, tables in group_tables.items():
-        dfs = []
-        for tbl in tables:
-            df = pd.read_sql(f"SELECT * FROM {tbl}", conn)
-            df['source_table'] = tbl  # Ghi chú nguồn dữ liệu
-            dfs.append(df)
+# --- 2. Kết nối DB & đọc metadata ---
+def get_metadata(conn, table_name):
+    query = f"SELECT file_code, group_id FROM {table_name}"
+    df_meta = pd.read_sql(query, conn)
+    return df_meta
 
-        merged_df = pd.concat(dfs, ignore_index=True)
 
-        # Tên bảng mới (ví dụ: group1)
-        new_table_name = group
+# --- 3. Gán group_id cho từng dòng dựa trên file_code ---
+def assign_group_id(df_data, df_meta):
+    return df_data.merge(df_meta, on="file_code", how="left")
 
-        # Tạo bảng mới (DROP nếu đã tồn tại)
-        cursor.execute(f"IF OBJECT_ID('{new_table_name}', 'U') IS NOT NULL DROP TABLE {new_table_name}")
-        conn.commit()
+def minmax_scale_row(row, scale_cols):
+    values = row[scale_cols].astype(float)
+    min_val = values.min()
+    max_val = values.max()
+    if max_val == min_val:
+        scaled = pd.Series([0.0]*len(scale_cols), index=scale_cols)
+    else:
+        scaled = 1 + 9 * (values - min_val) / (max_val - min_val)
+    return pd.concat([row.drop(scale_cols), scaled])
 
-        # Tạo bảng mới từ dataframe
-        create_table_sql = f"CREATE TABLE {new_table_name} ("
-        for col in merged_df.columns:
-            coltype = "NVARCHAR(MAX)" if merged_df[col].dtype == "object" else "FLOAT"
-            create_table_sql += f"[{col}] {coltype},"
-        create_table_sql = create_table_sql.rstrip(",") + ")"
-        cursor.execute(create_table_sql)
-        conn.commit()
+def scale_each_row(df):
+    df_scaled = df.copy()
+    exclude_cols = ['file_code', 'group_id', 'EU27']
+    scale_cols = [col for col in df.columns if col not in exclude_cols]
+    df_scaled = df_scaled.apply(lambda row: minmax_scale_row(row, scale_cols), axis=1)
+    return df_scaled
 
-        # Insert dữ liệu
-        insert_sql = f"INSERT INTO {new_table_name} ({', '.join(f'[{c}]' for c in merged_df.columns)}) VALUES ({', '.join(['?' for _ in merged_df.columns])})"
-        for _, row in merged_df.iterrows():
-            cursor.execute(insert_sql, tuple(row))
-        conn.commit()
+# --- 4. Ghi các nhóm vào DB ---
+def save_groups_to_db(df_full, conn, if_exists="replace"):
+    grouped = df_full.groupby("group_id")
+    for group_id, group_df in grouped:
+        table_name = f"group{int(group_id)}"
+        group_df.drop(columns=["group_id"], inplace=True)
+        print(f"→ Ghi bảng: {table_name}, số dòng: {len(group_df)}")
+        group_df.to_sql(table_name, con=conn, index=False, if_exists=if_exists)
 
-        print(f"Đã tạo và lưu bảng {new_table_name}: {merged_df.shape[0]} dòng")
 
 if __name__ == "__main__":
+    # Bước 1: Merge các file CSV
+    df_data = merge_csv_files(CSV_DIR, CSV_FILES)
+    print(f"[+] Dữ liệu sau khi merge: {df_data.shape}")
+
+    # Bước 2: Khởi tạo kết nối DB
     conn = init_db()
-    cursor = conn.cursor()
-    print("Kết nối database thành công!")
 
-    merge_group()
+    # Nếu dùng SQLAlchemy, đảm bảo `conn` là dạng engine hoặc connectable
+    df_meta = get_metadata(conn, TABLE_METADATA)
+    print(f"[+] Metadata: {df_meta.shape}")
 
-    conn.close()
+    # Bước 3: Gán group_id
+    df_grouped = assign_group_id(df_data, df_meta)
+    print(f"[+] Sau khi gán group_id: {df_grouped.shape}")
+
+    if df_grouped["group_id"].isnull().any():
+        raise ValueError("Một số dòng không có group_id, vui lòng kiểm tra file_code!")
+
+    # Bước 4: Lưu vào từng bảng group{group_id}
+    df_scaled = scale_each_row(df_grouped)
+    save_groups_to_db(df_scaled, conn)
+
+    print("Hoàn tất chia và lưu bảng group")

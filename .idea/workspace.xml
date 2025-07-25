@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9081543-ead9-4fa0-bfc8-c08a84f89e07" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/scripts/calculate/WRITE_DOWN.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cleaned_data/processed/write_down_answer_scores.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/processed/write_down_answer_scores.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/calculate/WRITE_DOWN.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/calculate/WRITE_DOWN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/insert_into_sql/insert_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/insert_into_sql/insert_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +54,7 @@
     "Python.MULTIPLE_ANSWERS_POSSIBLE.executor": "Run",
     "Python.ONE_ANSWER_ONLY.executor": "Run",
     "Python.WRITE_DOWN.executor": "Run",
+    "Python.baseline.executor": "Run",
     "Python.group_1.executor": "Run",
     "Python.group_1_MinMax.executor": "Run",
     "Python.group_1_ZScore.executor": "Run",
@@ -87,9 +90,9 @@
       <recent name="$PROJECT_DIR$/../personal-project-code" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scripts/insert_into_sql" />
       <recent name="$PROJECT_DIR$/scripts/others" />
       <recent name="$PROJECT_DIR$/data/metadata" />
-      <recent name="$PROJECT_DIR$/scripts/insert_into_sql" />
       <recent name="$PROJECT_DIR$/scripts/g1_insert_into_sql" />
       <recent name="$PROJECT_DIR$/documentations/FL549" />
     </key>

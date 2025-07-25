@@ -112,7 +112,7 @@ def process_table(table_name: str, conn):
                 point = scoring_dict[key]
                 total_score += count * point
         # Chia lại cho base_total của quốc gia đó
-        score_result[country] = (total_score / base_total[country]*10) if base_total[country] != 0 else None
+        score_result[country] = (total_score / base_total[country]*1) if base_total[country] != 0 else None
 
     # 9. Tạo dataframe kết quả
     result = pd.DataFrame([score_result])
