@@ -33,7 +33,7 @@ def get_meta_data(table_name: str, conn):
 def process_table(table_name: str, conn):
     df = pd.read_sql(f"SELECT * FROM {table_name}", conn)
 
-    # Chỉ giữ các cột số (giả định là các cột quốc gia)
+    # Chỉ giữ các cột số
     numeric_cols = df.select_dtypes(include='number').columns.tolist()
     if not numeric_cols:
         print(f"[SKIP] {table_name}: Không có cột số.")
@@ -62,31 +62,6 @@ def process_table(table_name: str, conn):
     _, file_code = get_meta_data(table_name, conn)
     result = scaled_scores.to_frame().T
     result.insert(0, 'file_code', file_code)
-
-    # Tính trung bình các cột numeric_cols (KHÔNG có EU27)
-    mean_without_eu27 = df_valid[numeric_cols].mean()
-
-    # Tìm cột EU27 (nếu có)
-    eu27_cols = [col for col in df_valid.columns if "EU27" in col]
-
-    # Tính trung bình các cột numeric_cols + EU27 (nếu có)
-    if eu27_cols:
-        numeric_with_eu27 = numeric_cols + eu27_cols
-        mean_with_eu27 = df_valid[numeric_with_eu27].mean()
-    else:
-        print("Không có cột EU27 nào trong dữ liệu.")
-        mean_with_eu27 = mean_without_eu27  # fallback để không lỗi
-
-    # So sánh hai trung bình
-    mean_diff = (mean_with_eu27 - mean_without_eu27).abs()
-    mean_pct_diff = (mean_diff / mean_without_eu27.replace(0, np.nan)) * 100
-
-    # In kết quả
-    print("Chênh lệch tuyệt đối trung bình giữa có và không có EU27:")
-    print(mean_diff.describe())
-
-    print("\nChênh lệch tương đối (theo phần trăm):")
-    print(mean_pct_diff.describe())
 
     return result
 
