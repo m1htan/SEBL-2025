@@ -4,6 +4,7 @@ from sqlalchemy import create_engine
 import urllib
 
 CSV_DIR = "/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/processed"
+output_dir = "/Users/minhtan/Documents/GitHub/SEBL-2025/data/merged_data"
 CSV_FILES = ["max_2-3_answer_scores.csv", "multiple_answer_scores.csv",
              "one_answer_scores.csv", "write_down_answer_scores.csv"]
 TABLE_METADATA = "metadata_549"
@@ -42,29 +43,51 @@ def get_metadata(conn, table_name):
 def assign_group_id(df_data, df_meta):
     return df_data.merge(df_meta, on="file_code", how="left")
 
-def minmax_scale_row(row, scale_cols):
-    values = row[scale_cols].astype(float)
-    min_val = values.min()
-    max_val = values.max()
-    if max_val == min_val:
-        scaled = pd.Series([0.0]*len(scale_cols), index=scale_cols)
-    else:
-        scaled = 1 + 9 * (values - min_val) / (max_val - min_val)
-    return pd.concat([row.drop(scale_cols), scaled])
+def reshape_to_long_format(df):
+    # Xác định các cột id (không xoay)
+    id_vars = ['file_code', 'group_id']
 
-def scale_each_row(df):
-    df_scaled = df.copy()
-    exclude_cols = ['file_code', 'group_id', 'EU27']
-    scale_cols = [col for col in df.columns if col not in exclude_cols]
-    df_scaled = df_scaled.apply(lambda row: minmax_scale_row(row, scale_cols), axis=1)
-    return df_scaled
+    # Loại bỏ cột 'EU27' nếu tồn tại
+    if 'EU27' in df.columns:
+        df = df.drop(columns=['EU27'])
+
+    # Các cột cần xoay (quốc gia)
+    value_vars = [col for col in df.columns if col not in id_vars]
+
+    # Thực hiện melt (xoay dọc)
+    df_long = df.melt(id_vars=id_vars,
+                      value_vars=value_vars,
+                      var_name='country_code',
+                      value_name='score')
+
+    # Di chuyển country_code lên ngay sau file_code
+    cols = df_long.columns.tolist()
+    cols.insert(1, cols.pop(cols.index("country_code")))
+    df_long = df_long[cols]
+
+    df_long = df_long.sort_values(by=["file_code", "country_code"]).reset_index(drop=True)
+
+    return df_long
 
 # Ghi các nhóm vào DB
 def save_groups_to_db(df_full, conn, if_exists="replace"):
     grouped = df_full.groupby("group_id")
     for group_id, group_df in grouped:
         table_name = f"group{int(group_id)}"
-        group_df.drop(columns=["group_id"], inplace=True)
+
+        cols = group_df.columns.tolist()
+        ordered_cols = ['file_code', 'group_id']
+        if 'EU27' in cols:
+            ordered_cols.append('EU27')
+        # Thêm các cột còn lại
+        other_cols = [col for col in cols if col not in ordered_cols]
+        final_cols = ordered_cols + other_cols
+        group_df = group_df[final_cols]
+
+        csv_path = os.path.join(output_dir, f"group{int(group_id)}.csv")
+        group_df.to_csv(csv_path, index=False, encoding="utf-8-sig")
+        print(f"[+] Đã lưu file: {csv_path}, số dòng: {len(group_df)}")
+
         print(f"Ghi bảng: {table_name}, số dòng: {len(group_df)}")
         group_df.to_sql(table_name, con=conn, index=False, if_exists=if_exists)
 
@@ -87,7 +110,7 @@ if __name__ == "__main__":
         raise ValueError("Một số dòng không có group_id, vui lòng kiểm tra file_code!")
 
     # Lưu vào từng bảng group{group_id}
-    df_scaled = scale_each_row(df_grouped)
-    save_groups_to_db(df_scaled, conn)
+    df_long = reshape_to_long_format(df_grouped)
+    save_groups_to_db(df_long, conn)
 
     print("Hoàn tất chia và lưu bảng group")

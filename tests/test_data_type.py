@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("/data/metadata/metadata_549.csv")
+df = pd.read_csv("/Users/minhtan/Documents/GitHub/SEBL-2025/data/metadata/metadata_549.csv")
 print(df.dtypes)
 
 import pyodbc

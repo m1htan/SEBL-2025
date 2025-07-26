@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9081543-ead9-4fa0-bfc8-c08a84f89e07" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/scripts/total.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/visualize.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/merged_data/Group_1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/calculate/MULTIPLE_ANSWERS_POSSIBLE.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/calculate/MULTIPLE_ANSWERS_POSSIBLE.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/calculate/ONE_ANSWER_ONLY.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/calculate/ONE_ANSWER_ONLY.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/calculate/WRITE_DOWN.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/calculate/WRITE_DOWN.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/insert_into_sql/insert_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/insert_into_sql/insert_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_data_csv_vs_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_data_csv_vs_sql.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_data_type.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_data_type.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,6 +80,8 @@
     "Python.test_connection_2.executor": "Run",
     "Python.test_data_csv_vs_sql.executor": "Run",
     "Python.test_data_type.executor": "Run",
+    "Python.total.executor": "Run",
+    "Python.visualize.executor": "Run",
     "Python.volumeA.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -88,11 +98,11 @@
       <recent name="$PROJECT_DIR$/../personal-project-code" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/output/plots" />
+      <recent name="$PROJECT_DIR$/data/final" />
       <recent name="$PROJECT_DIR$/scripts/insert_into_sql" />
       <recent name="$PROJECT_DIR$/scripts/others" />
       <recent name="$PROJECT_DIR$/data/metadata" />
-      <recent name="$PROJECT_DIR$/scripts/g1_insert_into_sql" />
-      <recent name="$PROJECT_DIR$/documentations/FL549" />
     </key>
   </component>
   <component name="SharedIndexes">

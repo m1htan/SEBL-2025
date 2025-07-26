@@ -1,7 +1,5 @@
 import os
 import pandas as pd
-from sklearn.preprocessing import MinMaxScaler
-import numpy as np
 
 from config_db import config_sql_server
 
