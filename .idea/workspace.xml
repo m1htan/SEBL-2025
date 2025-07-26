@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e9081543-ead9-4fa0-bfc8-c08a84f89e07" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cleaned_data/processed/write_down_answer_scores.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/cleaned_data/processed/write_down_answer_scores.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/calculate/WRITE_DOWN.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/calculate/WRITE_DOWN.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/insert_into_sql/insert_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/insert_into_sql/insert_group.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
