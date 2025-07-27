@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9081543-ead9-4fa0-bfc8-c08a84f89e07" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/scripts/total.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/visualize.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/merged_data/Group_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/calculate/MULTIPLE_ANSWERS_POSSIBLE.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/calculate/MULTIPLE_ANSWERS_POSSIBLE.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/calculate/ONE_ANSWER_ONLY.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/calculate/ONE_ANSWER_ONLY.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/calculate/WRITE_DOWN.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/calculate/WRITE_DOWN.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/insert_into_sql/insert_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/insert_into_sql/insert_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_data_csv_vs_sql.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_data_csv_vs_sql.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_data_type.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_data_type.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
