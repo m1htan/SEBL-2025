@@ -8,16 +8,16 @@ import statsmodels.api as sm
 
 # Danh sách file và tên biến tương ứng
 csv_files = {
-    "group1": "/Users/minhtan/Documents/GitHub/SEBL-2025/data/final/final_score_group1.csv",
-    "group2": "/Users/minhtan/Documents/GitHub/SEBL-2025/data/final/final_score_group2.csv",
-    "group3": "/Users/minhtan/Documents/GitHub/SEBL-2025/data/final/final_score_group3.csv",
-    "group4": "/Users/minhtan/Documents/GitHub/SEBL-2025/data/final/final_score_group4.csv"
+    "group1": "/Users/minhtan/Documents/GitHub/SEBL-2025/data/final/all/final_score_group1.csv",
+    "group2": "/Users/minhtan/Documents/GitHub/SEBL-2025/data/final/all/final_score_group2.csv",
+    "group3": "/Users/minhtan/Documents/GitHub/SEBL-2025/data/final/all/final_score_group3.csv",
+    "group4": "/Users/minhtan/Documents/GitHub/SEBL-2025/data/final/all/final_score_group4.csv"
 }
 
-output_plot_dir = "/Users/minhtan/Documents/GitHub/SEBL-2025/output/plots"
+output_plot_dir = "/Users/minhtan/Documents/GitHub/SEBL-2025/output/all/plots"
 os.makedirs(output_plot_dir, exist_ok=True)
 
-output_stats_dir = "/Users/minhtan/Documents/GitHub/SEBL-2025/output/descriptive_statistics"
+output_stats_dir = "/Users/minhtan/Documents/GitHub/SEBL-2025/output/all/descriptive_statistics"
 os.makedirs(output_stats_dir, exist_ok=True)
 
 summary_stats = []

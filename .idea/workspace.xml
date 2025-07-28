@@ -5,7 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9081543-ead9-4fa0-bfc8-c08a84f89e07" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/final/final_score_group1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/final/all/final_score_group1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/final/final_score_group2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/final/all/final_score_group2.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/final/final_score_group3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/final/all/final_score_group3.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/final/final_score_group4.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/final/all/final_score_group4.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/descriptive_statistics/group1_describe.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/all/descriptive_statistics/group1_describe.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/descriptive_statistics/group2_describe.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/all/descriptive_statistics/group2_describe.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/descriptive_statistics/group3_describe.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/all/descriptive_statistics/group3_describe.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/descriptive_statistics/group4_describe.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/all/descriptive_statistics/group4_describe.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/descriptive_statistics/summary_all_groups.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/all/descriptive_statistics/summary_all_groups.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/plots/group1_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/all/plots/group1_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/plots/group1_qq.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/all/plots/group1_qq.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/plots/group2_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/all/plots/group2_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/plots/group2_qq.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/all/plots/group2_qq.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/plots/group3_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/all/plots/group3_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/plots/group3_qq.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/all/plots/group3_qq.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/plots/group4_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/all/plots/group4_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/plots/group4_qq.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/all/plots/group4_qq.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/total.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/final_all/total.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/visualize.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/final_all/visualize.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,11 +107,11 @@
       <recent name="$PROJECT_DIR$/../personal-project-code" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/final/all" />
+      <recent name="$PROJECT_DIR$/output/all" />
+      <recent name="$PROJECT_DIR$/scripts/final_all" />
       <recent name="$PROJECT_DIR$/output/plots" />
       <recent name="$PROJECT_DIR$/data/final" />
-      <recent name="$PROJECT_DIR$/scripts/insert_into_sql" />
-      <recent name="$PROJECT_DIR$/scripts/others" />
-      <recent name="$PROJECT_DIR$/data/metadata" />
     </key>
   </component>
   <component name="SharedIndexes">

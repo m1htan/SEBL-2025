@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 from sqlalchemy import create_engine
 
-OUTPUT_DIR = "/Users/minhtan/Documents/GitHub/SEBL-2025/data/final"
+OUTPUT_DIR = "/Users/minhtan/Documents/GitHub/SEBL-2025/data/final/all"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Kết nối DB
