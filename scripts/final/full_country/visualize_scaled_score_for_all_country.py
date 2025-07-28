@@ -8,16 +8,16 @@ import statsmodels.api as sm
 
 # Danh sách file và tên biến tương ứng
 csv_files = {
-    "group1": "/Users/minhtan/Documents/GitHub/SEBL-2025/data/final/all/final_score_group1.csv",
-    "group2": "/Users/minhtan/Documents/GitHub/SEBL-2025/data/final/all/final_score_group2.csv",
-    "group3": "/Users/minhtan/Documents/GitHub/SEBL-2025/data/final/all/final_score_group3.csv",
-    "group4": "/Users/minhtan/Documents/GitHub/SEBL-2025/data/final/all/final_score_group4.csv"
+    "group1": "/Users/minhtan/Documents/GitHub/SEBL-2025/data/final/full_country/scaled_score_for_all_country_group1.csv",
+    "group2": "/Users/minhtan/Documents/GitHub/SEBL-2025/data/final/full_country/scaled_score_for_all_country_group2.csv",
+    "group3": "/Users/minhtan/Documents/GitHub/SEBL-2025/data/final/full_country/scaled_score_for_all_country_group3.csv",
+    "group4": "/Users/minhtan/Documents/GitHub/SEBL-2025/data/final/full_country/scaled_score_for_all_country_group4.csv"
 }
 
-output_plot_dir = "/Users/minhtan/Documents/GitHub/SEBL-2025/output/all/plots"
+output_plot_dir = "/Users/minhtan/Documents/GitHub/SEBL-2025/output/full_country/plots"
 os.makedirs(output_plot_dir, exist_ok=True)
 
-output_stats_dir = "/Users/minhtan/Documents/GitHub/SEBL-2025/output/all/descriptive_statistics"
+output_stats_dir = "/Users/minhtan/Documents/GitHub/SEBL-2025/output/full_country/descriptive_statistics"
 os.makedirs(output_stats_dir, exist_ok=True)
 
 summary_stats = []
@@ -38,7 +38,7 @@ for group, path in csv_files.items():
     desc = df['scaled_score'].describe()
     print(desc)
 
-    desc.to_csv(os.path.join(output_stats_dir, f"{group}_describe.csv"), header=True)
+    desc.to_csv(os.path.join(output_stats_dir, f"full_country_{group}_describe.csv"), header=True)
 
     # Biểu đồ histogram + fitted normal
     plt.figure(figsize=(8, 5))
@@ -52,14 +52,14 @@ for group, path in csv_files.items():
     plt.xlabel("Scaled Score")
     plt.legend()
     plt.tight_layout()
-    plt.savefig(os.path.join(output_plot_dir, f"{group}_hist.png"))
+    plt.savefig(os.path.join(output_plot_dir, f"full_country_{group}_hist.png"))
     plt.close()
 
     # QQ Plot
     sm.qqplot(df['scaled_score'], line='s')
     plt.title(f"{group} - QQ Plot")
     plt.tight_layout()
-    plt.savefig(os.path.join(output_plot_dir, f"{group}_qq.png"))
+    plt.savefig(os.path.join(output_plot_dir, f"full_country_{group}_qq.png"))
     plt.close()
 
     # Test phân phối chuẩn
@@ -93,6 +93,6 @@ for group, path in csv_files.items():
 
 # Lưu bảng tổng hợp tất cả nhóm
 summary_df = pd.DataFrame(summary_stats)
-summary_df.to_csv(os.path.join(output_stats_dir, "summary_all_groups.csv"), index=False)
+summary_df.to_csv(os.path.join(output_stats_dir, "full_country_summary_all_groups.csv"), index=False)
 
 print(f"\nĐã lưu tất cả thống kê mô tả và kiểm định vào thư mục: {output_stats_dir}")

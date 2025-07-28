@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 from sqlalchemy import create_engine
 
-OUTPUT_DIR = "/Users/minhtan/Documents/GitHub/SEBL-2025/data/final/all"
+OUTPUT_DIR = "/Users/minhtan/Documents/GitHub/SEBL-2025/data/final/full_country"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 # Kết nối DB
@@ -55,7 +55,7 @@ def compute_weighted_scaled_scores(df_score: pd.DataFrame, df_meta: pd.DataFrame
 
 def save_groups_to_db(df_final: pd.DataFrame, engine):
     for group_id, group_df in df_final.groupby("group_id"):
-        table_name = f"final_score_group{group_id}"
+        table_name = f"scaled_score_for_all_country_group{group_id}"
         group_df.to_sql(table_name, engine, if_exists="replace", index=False)
         print(f"Đã lưu bảng: {table_name} ({len(group_df)} dòng)")
 
@@ -76,7 +76,7 @@ if __name__ == "__main__":
 
     # Lưu từng group_id
     for group_id, group_df in df_final.groupby("group_id"):
-        output_path = os.path.join(OUTPUT_DIR, f"final_score_group{group_id}.csv")
+        output_path = os.path.join(OUTPUT_DIR, f"scaled_score_for_all_country_group{group_id}.csv")
         group_df.to_csv(output_path, index=False)
         print(f"Đã lưu: {output_path}")
 

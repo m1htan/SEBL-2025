@@ -5,25 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9081543-ead9-4fa0-bfc8-c08a84f89e07" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/data/final/final_score_group1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/final/all/final_score_group1.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/final/final_score_group2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/final/all/final_score_group2.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/final/final_score_group3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/final/all/final_score_group3.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/final/final_score_group4.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/final/all/final_score_group4.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/descriptive_statistics/group1_describe.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/all/descriptive_statistics/group1_describe.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/descriptive_statistics/group2_describe.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/all/descriptive_statistics/group2_describe.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/descriptive_statistics/group3_describe.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/all/descriptive_statistics/group3_describe.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/descriptive_statistics/group4_describe.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/all/descriptive_statistics/group4_describe.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/descriptive_statistics/summary_all_groups.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/all/descriptive_statistics/summary_all_groups.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/plots/group1_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/all/plots/group1_hist.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/plots/group1_qq.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/all/plots/group1_qq.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/plots/group2_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/all/plots/group2_hist.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/plots/group2_qq.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/all/plots/group2_qq.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/plots/group3_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/all/plots/group3_hist.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/plots/group3_qq.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/all/plots/group3_qq.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/plots/group4_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/all/plots/group4_hist.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/plots/group4_qq.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/all/plots/group4_qq.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/total.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/final_all/total.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/visualize.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/final_all/visualize.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/final/ratio_46/scaled_score_for_4_part_ratio_country.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/final/ratio_46/visualize_scaled_score_for_4_part_ratio_country.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/final/scale_full_group/scaled_score_for_scale_full_group_country.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/final/scale_full_group/visualize_scaled_score_for_scale_full_group_country.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/final/all/final_score_group1.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/final/all/final_score_group2.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/final/all/final_score_group3.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/final/all/final_score_group4.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/all/descriptive_statistics/group1_describe.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/all/descriptive_statistics/group2_describe.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/all/descriptive_statistics/group3_describe.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/all/descriptive_statistics/group4_describe.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/all/descriptive_statistics/summary_all_groups.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/all/plots/group1_hist.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/all/plots/group1_qq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/all/plots/group2_hist.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/all/plots/group2_qq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/all/plots/group3_hist.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/all/plots/group3_qq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/all/plots/group4_hist.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/all/plots/group4_qq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/final_all/total.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/final/full_country/scaled_score_for_all_country.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/final_all/visualize.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/final/full_country/visualize_scaled_score_for_all_country.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,11 +70,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Python.46_total.executor": "Run",
+    "Python.46_visualize.executor": "Run",
     "Python.MAX_2–3_ANSWERS.executor": "Run",
     "Python.MULTIPLE_ANSWERS_POSSIBLE.executor": "Run",
     "Python.ONE_ANSWER_ONLY.executor": "Run",
     "Python.WRITE_DOWN.executor": "Run",
+    "Python.all_total.executor": "Run",
     "Python.baseline.executor": "Run",
+    "Python.full_total.executor": "Run",
     "Python.group_1.executor": "Run",
     "Python.group_1_MinMax.executor": "Run",
     "Python.group_1_ZScore.executor": "Run",
@@ -84,6 +93,9 @@
     "Python.preprocess_volume_AAP.executor": "Run",
     "Python.random_country.executor": "Run",
     "Python.read_raw_data.executor": "Run",
+    "Python.scaled_score_for_4_part_ratio_country.executor": "Run",
+    "Python.scaled_score_for_all_country.executor": "Run",
+    "Python.scaled_score_for_scale_full_group_country.executor": "Run",
     "Python.test_connection_0.executor": "Run",
     "Python.test_connection_1.executor": "Run",
     "Python.test_connection_2.executor": "Run",
@@ -91,27 +103,30 @@
     "Python.test_data_type.executor": "Run",
     "Python.total.executor": "Run",
     "Python.visualize.executor": "Run",
+    "Python.visualize_scaled_score_for_4_part_ratio_country.executor": "Run",
+    "Python.visualize_scaled_score_for_all_country.executor": "Run",
+    "Python.visualize_scaled_score_for_scale_full_group_country.executor": "Run",
     "Python.volumeA.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/minhtan/Documents/GitHub/SEBL-2025/tests"
+    "last_opened_file_path": "/Users/minhtan/Documents/GitHub/SEBL-2025/scripts/final"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scripts/final" />
       <recent name="$PROJECT_DIR$/tests" />
       <recent name="$PROJECT_DIR$/scripts/baseline/group_1" />
       <recent name="$PROJECT_DIR$/scripts/preprocess" />
       <recent name="$PROJECT_DIR$/../personal-private-project" />
-      <recent name="$PROJECT_DIR$/../personal-project-code" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/final/scale_full_group" />
+      <recent name="$PROJECT_DIR$/scripts/final/scale_full_group" />
+      <recent name="$PROJECT_DIR$/scripts/final" />
       <recent name="$PROJECT_DIR$/data/final/all" />
       <recent name="$PROJECT_DIR$/output/all" />
-      <recent name="$PROJECT_DIR$/scripts/final_all" />
-      <recent name="$PROJECT_DIR$/output/plots" />
-      <recent name="$PROJECT_DIR$/data/final" />
     </key>
   </component>
   <component name="SharedIndexes">
