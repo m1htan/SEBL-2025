@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9081543-ead9-4fa0-bfc8-c08a84f89e07" name="Changes" comment="" />
+    <list default="true" id="e9081543-ead9-4fa0-bfc8-c08a84f89e07" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/scripts/final/ai_agent/scale_6_part_ratio.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/final/ai_agent/scale_full_group_6_part.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/final/ai_agent/visualize_ai_agent_all.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/final/ai_agent/visualize_ai_agent_by_group.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visualize_figure_for_report/code/country.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,6 +60,7 @@
     "Python.WRITE_DOWN.executor": "Run",
     "Python.all_total.executor": "Run",
     "Python.baseline.executor": "Run",
+    "Python.country.executor": "Run",
     "Python.full_total.executor": "Run",
     "Python.group_1.executor": "Run",
     "Python.group_1_MinMax.executor": "Run",
@@ -68,6 +76,8 @@
     "Python.preprocess_volume_AAP.executor": "Run",
     "Python.random_country.executor": "Run",
     "Python.read_raw_data.executor": "Run",
+    "Python.scale_6_part_ratio.executor": "Run",
+    "Python.scale_full_group_6_part.executor": "Run",
     "Python.scaled_score_for_4_part_ratio_country.executor": "Run",
     "Python.scaled_score_for_all_country.executor": "Run",
     "Python.scaled_score_for_scale_full_group_country.executor": "Run",
@@ -78,6 +88,8 @@
     "Python.test_data_type.executor": "Run",
     "Python.total.executor": "Run",
     "Python.visualize.executor": "Run",
+    "Python.visualize_ai_agent_all.executor": "Run",
+    "Python.visualize_ai_agent_by_group.executor": "Run",
     "Python.visualize_scaled_score_for_4_part_ratio_country.executor": "Run",
     "Python.visualize_scaled_score_for_all_country.executor": "Run",
     "Python.visualize_scaled_score_for_scale_full_group_country.executor": "Run",
@@ -85,23 +97,24 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/minhtan/Downloads"
+    "last_opened_file_path": "/Users/minhtan/Documents/GitHub/SEBL-2025/output/ai_agent/by_group",
+    "settings.editor.selected.configurable": "preferences.externalTools"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/output/ai_agent/by_group" />
+      <recent name="$PROJECT_DIR$/scripts/final/ai_agent" />
       <recent name="$USER_HOME$/Downloads" />
       <recent name="$USER_HOME$/Dowloads" />
       <recent name="$PROJECT_DIR$/scripts/final" />
-      <recent name="$PROJECT_DIR$/tests" />
-      <recent name="$PROJECT_DIR$/scripts/baseline/group_1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/output/ai_agent/all" />
+      <recent name="$PROJECT_DIR$/scripts/final/ai_agent" />
+      <recent name="$PROJECT_DIR$/data/final/ai_agent" />
+      <recent name="$PROJECT_DIR$/visualize_figure_for_report/code" />
       <recent name="$PROJECT_DIR$/data/final/scale_full_group" />
-      <recent name="$PROJECT_DIR$/scripts/final/scale_full_group" />
-      <recent name="$PROJECT_DIR$/scripts/final" />
-      <recent name="$PROJECT_DIR$/data/final/all" />
-      <recent name="$PROJECT_DIR$/output/all" />
     </key>
   </component>
   <component name="SharedIndexes">
