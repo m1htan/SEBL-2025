@@ -4,7 +4,7 @@ df = pd.read_csv("/Users/minhtan/Documents/GitHub/SEBL-2025/data/metadata/metada
 print(df.dtypes)
 
 import pyodbc
-from config_db import config_sql_server
+from config import config_sql_server
 
 conn = config_sql_server(section='sqlserver')
 cursor = conn.cursor()

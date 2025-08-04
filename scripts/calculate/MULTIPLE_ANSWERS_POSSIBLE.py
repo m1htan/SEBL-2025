@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-from config_db import config_sql_server
+from config import config_sql_server
 
 OUTPUT_DIR = "/Users/minhtan/Documents/GitHub/SEBL-2025/data/cleaned_data/processed"
 os.makedirs(OUTPUT_DIR, exist_ok=True)

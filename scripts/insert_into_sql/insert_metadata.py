@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 import pyodbc
-from config_db import config_sql_server
+from config import config_sql_server
 
 CSV_DIR = "/Users/minhtan/Documents/GitHub/SEBL-2025/data/metadata"
 os.makedirs(CSV_DIR, exist_ok=True)

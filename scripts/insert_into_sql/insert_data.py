@@ -1,6 +1,6 @@
 import os
 import pandas as pd
-from config_db import config_sql_server
+from config import config_sql_server
 
 def init_db():
     return config_sql_server(section='sqlserver')

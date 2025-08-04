@@ -1,6 +1,6 @@
 import pandas as pd
 import pyodbc
-from config_db import config_sql_server
+from config import config_sql_server
 
 # Tên file và bảng
 csv_file = "/Users/minhtan/Documents/GitHub/SEBL-2025/data/metadata/metadata_549.csv"

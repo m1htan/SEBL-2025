@@ -1,4 +1,4 @@
-from config_db import config_sql_server
+from config import config_sql_server
 
 def init_db():
     conn = config_sql_server(section='sqlserver')
