@@ -5,12 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9081543-ead9-4fa0-bfc8-c08a84f89e07" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/scripts/final/ai_agent/scale_6_part_ratio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/final/ai_agent/scale_full_group_6_part.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/final/ai_agent/visualize_ai_agent_all.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/final/ai_agent/visualize_ai_agent_by_group.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/visualize_figure_for_report/code/country.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/final/compare/compare_with_baseline.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/ai_agent/by_group/plots/ai_agent_by_group_group1_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/ai_agent/by_group/plots/ai_agent_by_group_group1_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/ai_agent/by_group/plots/ai_agent_by_group_group2_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/ai_agent/by_group/plots/ai_agent_by_group_group2_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/ai_agent/by_group/plots/ai_agent_by_group_group3_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/ai_agent/by_group/plots/ai_agent_by_group_group3_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/ai_agent/by_group/plots/ai_agent_by_group_group4_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/ai_agent/by_group/plots/ai_agent_by_group_group4_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/ratio_46/plots/ratio_46_group1_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/ratio_46/plots/ratio_46_group1_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/ratio_46/plots/ratio_46_group2_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/ratio_46/plots/ratio_46_group2_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/ratio_46/plots/ratio_46_group3_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/ratio_46/plots/ratio_46_group3_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/ratio_46/plots/ratio_46_group4_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/ratio_46/plots/ratio_46_group4_hist.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/final/ai_agent/visualize_ai_agent_by_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/final/ai_agent/visualize_ai_agent_by_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/final/ratio_46/visualize_scaled_score_for_4_part_ratio_country.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/final/ratio_46/visualize_scaled_score_for_4_part_ratio_country.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +66,7 @@
     "Python.WRITE_DOWN.executor": "Run",
     "Python.all_total.executor": "Run",
     "Python.baseline.executor": "Run",
+    "Python.compare_with_baseline.executor": "Run",
     "Python.country.executor": "Run",
     "Python.full_total.executor": "Run",
     "Python.group_1.executor": "Run",
@@ -97,24 +104,24 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/minhtan/Documents/GitHub/SEBL-2025/output/ai_agent/by_group",
+    "last_opened_file_path": "/Users/minhtan/Documents/GitHub/SEBL-2025/output/compare",
     "settings.editor.selected.configurable": "preferences.externalTools"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/output/compare" />
+      <recent name="$USER_HOME$/Downloads" />
       <recent name="$PROJECT_DIR$/output/ai_agent/by_group" />
       <recent name="$PROJECT_DIR$/scripts/final/ai_agent" />
-      <recent name="$USER_HOME$/Downloads" />
       <recent name="$USER_HOME$/Dowloads" />
-      <recent name="$PROJECT_DIR$/scripts/final" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/output/compare/plots" />
       <recent name="$PROJECT_DIR$/output/ai_agent/all" />
       <recent name="$PROJECT_DIR$/scripts/final/ai_agent" />
       <recent name="$PROJECT_DIR$/data/final/ai_agent" />
       <recent name="$PROJECT_DIR$/visualize_figure_for_report/code" />
-      <recent name="$PROJECT_DIR$/data/final/scale_full_group" />
     </key>
   </component>
   <component name="SharedIndexes">

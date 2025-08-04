@@ -40,16 +40,30 @@ for group, path in csv_files.items():
 
     desc.to_csv(os.path.join(output_stats_dir, f"ratio_46_{group}_describe.csv"), header=True)
 
-    # Biểu đồ histogram + fitted normal
+    # Các mốc phần tư
+    q25 = desc["25%"]
+    q50 = desc["50%"]
+    q75 = desc["75%"]
+
+    # Biểu đồ histogram + KDE + Fit đường chuẩn
     plt.figure(figsize=(8, 5))
-    sns.histplot(df['scaled_score'], kde=True, stat="density", bins=20, color='skyblue', label='Histogram')
+    sns.histplot(df['scaled_score'], kde=True, stat="density", bins=20, color='skyblue', label='Histogram + KDE')
+
+    # Fit và vẽ đường chuẩn
     mu, std = norm.fit(df['scaled_score'])
     xmin, xmax = plt.xlim()
     x = np.linspace(xmin, xmax, 100)
     p = norm.pdf(x, mu, std)
     plt.plot(x, p, 'r', linewidth=2, label='Normal Fit')
+
+    # Thêm các đường đứng tại các mốc 25%, 50%, 75%
+    for quantile, label in zip([q25, q50, q75], ["Q1 (25%)", "Q2 (50%)", "Q3 (75%)"]):
+        plt.axvline(quantile, color='red', linestyle='--', linewidth=1.5)
+        plt.text(quantile + 0.1, plt.ylim()[1] * 0.8, f'{label}\n{quantile:.2f}', color='red', fontsize=8)
+
     plt.title(f"{group} - Histogram + Normal Fit (μ={mu:.2f}, σ={std:.2f})")
     plt.xlabel("Scaled Score")
+    plt.ylabel("Density")
     plt.legend()
     plt.tight_layout()
     plt.savefig(os.path.join(output_plot_dir, f"ratio_46_{group}_hist.png"))
@@ -62,7 +76,7 @@ for group, path in csv_files.items():
     plt.savefig(os.path.join(output_plot_dir, f"ratio_46_{group}_qq.png"))
     plt.close()
 
-    # Test phân phối chuẩn
+    # Kiểm định phân phối chuẩn
     stat1, p1 = shapiro(df['scaled_score'])
     stat2, p2 = normaltest(df['scaled_score'])
 
@@ -73,16 +87,16 @@ for group, path in csv_files.items():
     normal_msg = "Có thể giả định phân phối chuẩn." if is_normal else "KHÔNG tuân theo phân phối chuẩn."
     print(normal_msg)
 
-    # Ghi kết quả kiểm định ra dict
+    # Ghi kết quả kiểm định
     summary_stats.append({
         "group": group,
         "count": desc["count"],
         "mean": desc["mean"],
         "std": desc["std"],
         "min": desc["min"],
-        "25%": desc["25%"],
-        "50%": desc["50%"],
-        "75%": desc["75%"],
+        "25%": q25,
+        "50%": q50,
+        "75%": q75,
         "max": desc["max"],
         "shapiro_stat": stat1,
         "shapiro_p": p1,
@@ -91,8 +105,9 @@ for group, path in csv_files.items():
         "is_normal": is_normal
     })
 
-# Lưu bảng tổng hợp tất cả nhóm
+# Tổng hợp tất cả nhóm
 summary_df = pd.DataFrame(summary_stats)
 summary_df.to_csv(os.path.join(output_stats_dir, "ratio_46_summary_all_groups.csv"), index=False)
 
 print(f"\nĐã lưu tất cả thống kê mô tả và kiểm định vào thư mục: {output_stats_dir}")
+print(f"Biểu đồ đã được lưu trong: {output_plot_dir}")
