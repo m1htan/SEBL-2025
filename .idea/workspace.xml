@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9081543-ead9-4fa0-bfc8-c08a84f89e07" name="Changes" comment="" />
+    <list default="true" id="e9081543-ead9-4fa0-bfc8-c08a84f89e07" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,58 +45,62 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.46_total.executor": "Run",
-    "Python.46_visualize.executor": "Run",
-    "Python.MAX_2–3_ANSWERS.executor": "Run",
-    "Python.MULTIPLE_ANSWERS_POSSIBLE.executor": "Run",
-    "Python.ONE_ANSWER_ONLY.executor": "Run",
-    "Python.WRITE_DOWN.executor": "Run",
-    "Python.all_total.executor": "Run",
-    "Python.baseline.executor": "Run",
-    "Python.compare_with_baseline.executor": "Run",
-    "Python.country.executor": "Run",
-    "Python.full_total.executor": "Run",
-    "Python.group_1.executor": "Run",
-    "Python.group_1_MinMax.executor": "Run",
-    "Python.group_1_ZScore.executor": "Run",
-    "Python.insert_country.executor": "Run",
-    "Python.insert_data.executor": "Run",
-    "Python.insert_group.executor": "Run",
-    "Python.insert_into_database.executor": "Run",
-    "Python.insert_metadata.executor": "Run",
-    "Python.preprocess.executor": "Run",
-    "Python.preprocess_volume_A.executor": "Run",
-    "Python.preprocess_volume_AA.executor": "Run",
-    "Python.preprocess_volume_AAP.executor": "Run",
-    "Python.random_country.executor": "Run",
-    "Python.read_raw_data.executor": "Run",
-    "Python.scale_6_part_ratio.executor": "Run",
-    "Python.scale_full_group_6_part.executor": "Run",
-    "Python.scaled_score_for_4_part_ratio_country.executor": "Run",
-    "Python.scaled_score_for_all_country.executor": "Run",
-    "Python.scaled_score_for_scale_full_group_country.executor": "Run",
-    "Python.test_connection_0.executor": "Run",
-    "Python.test_connection_1.executor": "Run",
-    "Python.test_connection_2.executor": "Run",
-    "Python.test_data_csv_vs_sql.executor": "Run",
-    "Python.test_data_type.executor": "Run",
-    "Python.total.executor": "Run",
-    "Python.visualize.executor": "Run",
-    "Python.visualize_ai_agent_all.executor": "Run",
-    "Python.visualize_ai_agent_by_group.executor": "Run",
-    "Python.visualize_scaled_score_for_4_part_ratio_country.executor": "Run",
-    "Python.visualize_scaled_score_for_all_country.executor": "Run",
-    "Python.visualize_scaled_score_for_scale_full_group_country.executor": "Run",
-    "Python.volumeA.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/minhtan/Documents/GitHub/SEBL-2025/output/compare",
-    "settings.editor.selected.configurable": "preferences.externalTools"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.46_total.executor&quot;: &quot;Run&quot;,
+    &quot;Python.46_visualize.executor&quot;: &quot;Run&quot;,
+    &quot;Python.API.executor&quot;: &quot;Run&quot;,
+    &quot;Python.MAX_2–3_ANSWERS.executor&quot;: &quot;Run&quot;,
+    &quot;Python.MULTIPLE_ANSWERS_POSSIBLE.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ONE_ANSWER_ONLY.executor&quot;: &quot;Run&quot;,
+    &quot;Python.WRITE_DOWN.executor&quot;: &quot;Run&quot;,
+    &quot;Python.all_total.executor&quot;: &quot;Run&quot;,
+    &quot;Python.baseline.executor&quot;: &quot;Run&quot;,
+    &quot;Python.calculate_zone.executor&quot;: &quot;Run&quot;,
+    &quot;Python.compare_with_baseline.executor&quot;: &quot;Run&quot;,
+    &quot;Python.country.executor&quot;: &quot;Run&quot;,
+    &quot;Python.full_total.executor&quot;: &quot;Run&quot;,
+    &quot;Python.group_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.group_1_MinMax.executor&quot;: &quot;Run&quot;,
+    &quot;Python.group_1_ZScore.executor&quot;: &quot;Run&quot;,
+    &quot;Python.insert_country.executor&quot;: &quot;Run&quot;,
+    &quot;Python.insert_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.insert_group.executor&quot;: &quot;Run&quot;,
+    &quot;Python.insert_into_database.executor&quot;: &quot;Run&quot;,
+    &quot;Python.insert_metadata.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.preprocess.executor&quot;: &quot;Run&quot;,
+    &quot;Python.preprocess_volume_A.executor&quot;: &quot;Run&quot;,
+    &quot;Python.preprocess_volume_AA.executor&quot;: &quot;Run&quot;,
+    &quot;Python.preprocess_volume_AAP.executor&quot;: &quot;Run&quot;,
+    &quot;Python.random_country.executor&quot;: &quot;Run&quot;,
+    &quot;Python.read_raw_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scale_6_part_ratio.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scale_full_group_6_part.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scaled_score_for_4_part_ratio_country.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scaled_score_for_all_country.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scaled_score_for_scale_full_group_country.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_connection_0.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_connection_1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_connection_2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_data_csv_vs_sql.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_data_type.executor&quot;: &quot;Run&quot;,
+    &quot;Python.test_env_para.executor&quot;: &quot;Run&quot;,
+    &quot;Python.total.executor&quot;: &quot;Run&quot;,
+    &quot;Python.visualize.executor&quot;: &quot;Run&quot;,
+    &quot;Python.visualize_ai_agent_all.executor&quot;: &quot;Run&quot;,
+    &quot;Python.visualize_ai_agent_by_group.executor&quot;: &quot;Run&quot;,
+    &quot;Python.visualize_scaled_score_for_4_part_ratio_country.executor&quot;: &quot;Run&quot;,
+    &quot;Python.visualize_scaled_score_for_all_country.executor&quot;: &quot;Run&quot;,
+    &quot;Python.visualize_scaled_score_for_scale_full_group_country.executor&quot;: &quot;Run&quot;,
+    &quot;Python.volumeA.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/minhtan/Documents/GitHub/SEBL-2025/output/compare&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.externalTools&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/output/compare" />
