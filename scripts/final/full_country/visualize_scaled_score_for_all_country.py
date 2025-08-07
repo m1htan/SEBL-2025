@@ -40,14 +40,24 @@ for group, path in csv_files.items():
 
     desc.to_csv(os.path.join(output_stats_dir, f"full_country_{group}_describe.csv"), header=True)
 
+    q25 = desc["25%"]
+    q50 = desc["50%"]
+    q75 = desc["75%"]
+
     # Biểu đồ histogram + fitted normal
     plt.figure(figsize=(8, 5))
     sns.histplot(df['scaled_score'], kde=True, stat="density", bins=20, color='skyblue', label='Histogram')
+
     mu, std = norm.fit(df['scaled_score'])
     xmin, xmax = plt.xlim()
     x = np.linspace(xmin, xmax, 100)
     p = norm.pdf(x, mu, std)
     plt.plot(x, p, 'r', linewidth=2, label='Normal Fit')
+
+    for q, label in zip([q25, q50, q75], ["Q1 (25%)", "Q2 (50%)", "Q3 (75%)"]):
+        plt.axvline(q, color='red', linestyle='--', linewidth=1.5)
+        plt.text(q + 0.1, plt.ylim()[1] * 0.8, f'{label}\n{q:.2f}', color='red', fontsize=8)
+
     plt.title(f"{group} - Histogram + Normal Fit (μ={mu:.2f}, σ={std:.2f})")
     plt.xlabel("Scaled Score")
     plt.legend()
