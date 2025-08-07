@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9081543-ead9-4fa0-bfc8-c08a84f89e07" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/visualize_figure_for_report/code/statistic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full_country/plots/full_country_group1_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/full_country/plots/full_country_group1_hist.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full_country/plots/full_country_group2_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/full_country/plots/full_country_group2_hist.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full_country/plots/full_country_group3_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/full_country/plots/full_country_group3_hist.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/full_country/plots/full_country_group4_hist.png" beforeDir="false" afterPath="$PROJECT_DIR$/output/full_country/plots/full_country_group4_hist.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/final/full_country/visualize_scaled_score_for_all_country.py" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/final/full_country/visualize_scaled_score_for_all_country.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualize_figure_for_report/output/EU_vs_nonEU.png" beforeDir="false" afterPath="$PROJECT_DIR$/visualize_figure_for_report/output/plots/EU_vs_nonEU.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualize_figure_for_report/output/SEBL_2025.png" beforeDir="false" afterPath="$PROJECT_DIR$/visualize_figure_for_report/output/plots/SEBL_2025.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualize_figure_for_report/output/map.png" beforeDir="false" afterPath="$PROJECT_DIR$/visualize_figure_for_report/output/plots/map.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualize_figure_for_report/output/ratio.png" beforeDir="false" afterPath="$PROJECT_DIR$/visualize_figure_for_report/output/plots/ratio.png" afterDir="false" />
-    </list>
+    <list default="true" id="e9081543-ead9-4fa0-bfc8-c08a84f89e07" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
