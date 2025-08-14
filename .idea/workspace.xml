@@ -96,17 +96,17 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/minhtan/Downloads",
+    "last_opened_file_path": "/Users/minhtan/Documents/GitHub/MCP-Python-SDK",
     "settings.editor.selected.configurable": "preferences.externalTools"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../MCP-Python-SDK" />
       <recent name="$USER_HOME$/Downloads" />
       <recent name="$PROJECT_DIR$/output/compare" />
       <recent name="$PROJECT_DIR$/output/ai_agent/by_group" />
       <recent name="$PROJECT_DIR$/scripts/final/ai_agent" />
-      <recent name="$USER_HOME$/Dowloads" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/visualize_figure_for_report/output/plots" />
