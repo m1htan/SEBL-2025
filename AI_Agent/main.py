@@ -8,7 +8,7 @@ from langgraph.graph import StateGraph
 from langchain_core.runnables import RunnableLambda
 from langchain_core.prompts import ChatPromptTemplate
 
-load_dotenv(dotenv_path='/Users/minhtan/Documents/GitHub/SEBL-2025/config/config.env')
+load_dotenv(dotenv_path='../config/config.env')
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-lite", temperature=0.7, google_api_key=os.environ["GOOGLE_API_KEY"])
 
